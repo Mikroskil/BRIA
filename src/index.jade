@@ -1,30 +1,108 @@
+doctype html
 html
   head
-    title BRIA
-    | &#x9;
-    style(type='text/css', href='build/build.css').
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    |     
+    title Hello World
+    |     
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    |     
+    style(type='text/css').
+      img {
+      width: 500px;
+      height: 500px;
+      }
+  |   
   body
     article
       section
-        h2
-          | BRIA
-        h4
-          | Alfrideo Neizer
-        h4
-          | Bima Setio
+        h2 BRIA
+        |         
+        |         
+        h4 Alfrideo Neizer
+        |         
+        |         
+        h4 Bima Setio
+        |         
+        |         
         h4 Iin Rosa
+        |         
+        |         
         h4 Rizal Setiawan
-      | &#x9;
+      |       
       section
         h2 All About Ferrari
         img(src='images/gambar4.jpg')
+    
       section
+        h2 Sejarah Ferrari
+        |         
+        
+        |         
+        ul
+          li  Ferrari adalah sebuah produsen mobil super dan mobil balap asal Italia.
+        li Ferrari didirikan oleh Enzo Ferrari pada tahun 1929
+        li Ferrari juga ikut serta dalam kompetisi Formula Satu. Salah satu pembalapnya yang terkenal adalah juara dunia tujuh kali asal Jerman, Michael Schumacher
+        li Di Indonesia, Ferrari dimiliki oleh PT Citra Langgeng Otomotif.
+      |       
+      section
+        h2 Syntax Highlighting
+        |         
+        h3
+          | Powered by 
+          a(href='http://twitter.com/LeaVerou') Lea Verou
+          | &apos;s 
+          a(href='https://github.com/LeaVerou/prism') Prism
+        |         
+        pre.
+          
+      |       
+      section(data-bespoke-hash='named-route')
+        h2 Named Route
+        |         
+        h3
+          | Powered by 
+          a(href='https://github.com/markdalgleish/bespoke-hash') bespoke-hash
+        |         
         p
-          | Ferrari adalah sebuah produsen mobil super dan mobil balap asal Italia
-       section
-        p
-          | Ferrari didirikan oleh Enzo Ferrari pada tahun 1929
-        p
-          | Ferrari juga ikut serta dalam kompetisi Formula Satu. Salah satu pembalapnya yang terkenal adalah juara dunia tujuh kali asal Jerman, Michael Schumacher.
-          | Di Indonesia, Ferrari dimiliki oleh PT Citra Langgeng Otomotif.
+          | Look up! This route has been named with a 
+          em &apos;data-bespoke-hash&apos;
+          |  attribute.
+      |       
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Emphatic Slide!
+        |         
+        h3
+          | Powered by 
+          a(href='https://github.com/markdalgleish/bespoke-backdrop') bespoke-backdrop
+      |       
+      section
+        h2.bullet Just the beginning...
+        br
+        |         
+        ul
+          li
+            | Edit 
+            a(href='http://jade-lang.com/') Jade
+            |  markup in 
+            em &apos;src/index.jade&apos;
+          |           
+          li
+            | Edit 
+            a(href='http://learnboost.github.io/stylus/') Stylus
+            |  styles in 
+            em &apos;src/styles/main.styl&apos;
+          |           
+          li
+            | Edit JavaScript in 
+            em &apos;src/scripts/main.js&apos;
+        br
+        |         
+        ul
+          li
+            strong Enjoy! :)
+            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+    |     
     script(src='build/build.js')
